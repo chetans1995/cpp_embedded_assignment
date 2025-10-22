@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\prett\\Desktop\\yh_akademin\\cpp_embedded_assignment",
+            "binaryPath": "c:\\Users\\prett\\Desktop\\yh_akademin\\cpp_embedded_assignment\\CuperAdCcreen.elf",
+            "binaryArgs": []
+        }
+    ]
+}
