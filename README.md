@@ -19,13 +19,13 @@ The program should always run while powered on. When powered on the program shou
 
 ### 2. Advertisement logic
 **2.1.**
-Different companies have paid different amount of money for their ads. Implement a way to show ads based on how much the advertiser paid. You will find information about the advertisers further down in the document.
+Paid weighting: probability of the next selected advertiser co-relates to how much they've paid for their ads / the total ad sum.
 
 **2.2.** 
-Companies will have different amount of ad messages. Make sure that all ad messages will be shown at some point.
+Companies will have different amount of ad messages. Make sure to rotate their ads independently and that all of their ads will have be shown at some point. This should be sequential and not randomly generated.
 
 ### 3. Proper initialization of hd44780
-The team have already written a part of the driver for the company's LCD driver. You need to finish the initialization in the hd44780 constructor.
+The team has already written a part of the driver for the company's LCD driver. You need to finish the initialization in the hd44780 constructor.
 
 **lcd_driver.cpp**
 ```cpp
@@ -78,8 +78,6 @@ The following folder structure should be uphold in this project.
 ```
 ProjectName
 ├─── Makefile
-├─── .hex
-├─── .map
 ├─── main.cpp
 ├─── include
 │    └───header files
@@ -93,7 +91,7 @@ Build cohesive files where every file represent a specific functionality for the
 ---
 
 # Advertisers
-The following companies are paying customers that want to show their adds on the screen:
+The following companies are paying customers that want to show their ads on the screen:
 
 ## 1. CoolCars LLC
 * **Company name:** CoolCars LLC
@@ -115,7 +113,7 @@ The following companies are paying customers that want to show their adds on the
 * **Messages:**
     * *Clean customers happy customers* `blink`
 
-## 4. HolyBurgers
+## 4. Holy Burgers
 * **Company name:** Holy Burgers
 * **Paid amount:** 1 750 SEK
 * **Messages:**
@@ -129,3 +127,5 @@ The following companies are paying customers that want to show their adds on the
 * **Messages:**
     * *No more excuses! Only GAINS!* `blink`
     * *Pro Gymbono - 14 days free* `plain`
+
+---
