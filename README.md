@@ -74,7 +74,7 @@ The program should always be able to call an ISR at any given time.
 Requirements on how the codebase should be delivered.
 
 ### 1. Folder structure
-The following folder structure should be uphold in this project.
+The following folder structure should be upheld in this project.
 ```
 ProjectName
 ├─── Makefile
@@ -86,7 +86,7 @@ ProjectName
 ```
 
 ### 2. Code Separation
-Build cohesive files where every file represent a specific functionality for the program.
+Build cohesive files where every file represents a specific functionality for the program.
 
 ---
 

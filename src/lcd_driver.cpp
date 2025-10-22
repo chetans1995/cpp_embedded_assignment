@@ -87,8 +87,6 @@ void hd44780::write_text(const char *text) {
     }
 }
 
-
-
 void hd44780::clear(void) {
     write_command(HD44780_CLEAR);
     millis_wait_ms(2);
