@@ -6,6 +6,7 @@
 #include <util/delay.h>
 #include "millis.h"
 
+
 // Pin configuration
 #define LCD_RS_DIR          DDRD
 #define LCD_RS_PORT         PORTD

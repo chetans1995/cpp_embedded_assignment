@@ -1,9 +1,9 @@
-CC=C:\avr\bin\avr-g++
-LD=C:\avr\bin\avr-ld
-OBJCOPY="C:\avr\bin\avr-objcopy"
-OBJDUMP="C:\avr\bin\avr-objdump"
-AVRSIZE="C:\avr\bin\avr-size"
-OBJISP="C:\avr\bin\avrdude"
+CC=C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-g++
+LD=C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-ld
+OBJCOPY="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-objcopy"
+OBJDUMP="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-objdump"
+AVRSIZE="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avr-size"
+OBJISP="C:\avr\avr-gcc-15.2.0-x64-windows\bin\avrdude"
 MCU=atmega328p
 PROGRAMMER=arduino
 BAUDRATE=115200
@@ -52,9 +52,9 @@ clean:
 	del "$(OUT)"  *.map *.P *.d
 
 $(OUTPUTDIR): 
-	@mkdir -p "$(OUTPUTDIR)"
-	@mkdir -p "bin"
-	@mkdir -p "bin/debug"
-	@mkdir -p "bin/debug/src"
+	@mkdir "$(OUTPUTDIR)"
+	@mkdir "bin"
+	@mkdir "bin/debug"
+	@mkdir "bin/debug/src"
 		   	
 .PHONY: clean dirs
